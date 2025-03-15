@@ -33,6 +33,7 @@ textarea
     border-radius:var(--size);
     padding:calc(var(--size)*0.5);
     border:calc(var(--size)*0.125) solid #000000;
+    color: black;
     word-wrap: break-word;
     resize:none;
     overflow:auto;

@@ -22,6 +22,7 @@ body
     height:calc(var(--size)*72.6);
     width:calc(var(--size)*112.6);
     background-color: #fff0d1;
+    color: black;
     border: none;
     border-radius:calc(var(--size)*2);
     padding:calc(var(--size)*3.7);
