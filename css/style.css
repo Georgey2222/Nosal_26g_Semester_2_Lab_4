@@ -16,6 +16,8 @@ body
     flex-direction: row;
     gap:calc(var(--size)*6);
     height:100vh;
+    margin:0px;
+    overflow: hidden;
 }
 .main_container
 {
