@@ -1,12 +1,9 @@
-const resize =function()
-{
-const width =window.innerWidth;
-const height = window.innerHeight;
+const width =document.documentElement.clientWidth;
+const height = document.documentElement.clientHeight;
+console.log(width);
 gorizontal_size=(width*0.85)/120;
 vertical_size=(height*0.85)/80;
-document.documentElement.style.setProperty('--size',`${Math.min(gorizontal_size,vertical_size)}px`);
-}
-resize();
+document.documentElement.style.setProperty('--size',`${Math.min(gorizontal_size,vertical_size,10)}px`);
 const create_comment = function()
 {
     const numbs=Array.from(arguments);

@@ -19,7 +19,7 @@ body
 }
 .main_container
 {
-    height:calc(var(--size)*80);
+    height:calc(var(--size)*72.6);
     width:calc(var(--size)*112.6);
     background-color: #fff0d1;
     border: none;

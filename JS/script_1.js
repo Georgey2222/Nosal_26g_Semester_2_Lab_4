@@ -1,12 +1,9 @@
-const resize =function()
-{
-const width=window.innerWidth;
-const height=window.innerHeight;
+const width =document.documentElement.clientWidth;
+const height = document.documentElement.clientHeight;
+console.log(width);
 gorizontal_size=(width*0.85)/120;
 vertical_size=(height*0.85)/80;
 document.documentElement.style.setProperty('--size',`${Math.min(gorizontal_size,vertical_size,10)}px`);
-}
-resize();
 const apiKey = '990610c7381315107d38ed74';  
 const apiUrl = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
 var usd=41.42,eur=45.21,chf=47.05,gbp=53.61,pln=10.77;
