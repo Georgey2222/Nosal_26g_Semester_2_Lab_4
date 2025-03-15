@@ -16,7 +16,16 @@ const create_comment = function()
         {
             a=numbs[1];
         }
-        if(a!="")
+        let flag=0;
+        for(let i=0;i<a.length;i++)
+        {
+            if(a[i]!=" ")
+            {
+                flag=1;
+                break;
+            }
+        }
+        if(a!="" && flag==1)
         {
             const div=document.createElement("div");
             const p=document.createElement("p");
@@ -41,6 +50,7 @@ const create_comment = function()
             {
                 document.getElementById(`text-${numb}`).value="";
             }
+            console.log(a.split(" "));
         }
         else
         {
@@ -54,4 +64,3 @@ const comm2=document.getElementById("comment-2");
 comm2.addEventListener("click",create_comment(2));
 create_comment(1,"Слава Україні!")();
 create_comment(2,"Героям Слава!")();
-
