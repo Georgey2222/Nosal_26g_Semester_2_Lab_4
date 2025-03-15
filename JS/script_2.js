@@ -17,15 +17,7 @@ const create_comment = function()
             a=numbs[1];
         }
         let flag=0;
-        for(let i=0;i<a.length;i++)
-        {
-            if(a[i]!=" ")
-            {
-                flag=1;
-                break;
-            }
-        }
-        if(a!="" && flag==1)
+        if(a.trim()!="")
         {
             const div=document.createElement("div");
             const p=document.createElement("p");
