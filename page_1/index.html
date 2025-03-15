@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_4_Heorhii_Nosal</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <section>
+    <div class="main_container">
+       <p class="title">
+        Currency conversion
+       </p>
+       <div class="box_in_1">
+         <div class="div_image">
+           <img src="./img/dollar_icon.png">
+           <img src="./img/hryvnya_icon.png">
+         </div>
+         <form id="box_2">
+           <div class="select-wrapper">
+            <label for="currency">
+              Select currency
+            </label>
+            <select class="select-wrapper" id="currency" name="currency">
+              <option value="1">USD / 41.42</option>
+              <option value="2">EUR / 45.21</option>
+              <option value="3">GBP / 53.61 </option>
+              <option value="4">CHF / 47.05</option>
+              <option value="5">PLN / 10.77</option>
+            </select>
+           </div>
+           <div class="input_box">
+            <label for="cost_uah">
+              The amount in UAH
+            </label>
+            <input id="cost_uah">
+           </div>
+           <button type="button" id="calc" class="calc">
+             Calculate
+           </button>
+           <div class="input_box">
+            <label for="result">
+              You can buy
+            </label>
+            <input id="result" readonly>
+           </div>
+           <button type="button" id="but_clear" class="clear">
+             Clear
+           </button>
+          </form>
+    </div>
+  </secton>
+  <script src="./JS/script.js"></script>
+</body>
+</html>
