@@ -16,7 +16,6 @@ const create_comment = function()
         {
             a=numbs[1];
         }
-        let flag=0;
         if(a.trim()!="")
         {
             const div=document.createElement("div");
@@ -42,7 +41,6 @@ const create_comment = function()
             {
                 document.getElementById(`text-${numb}`).value="";
             }
-            console.log(a.split(" "));
         }
         else
         {
